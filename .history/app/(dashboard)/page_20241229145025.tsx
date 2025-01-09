@@ -1,0 +1,18 @@
+import { Button } from "@/components/ui/button";
+import { RefreshCw } from "lucide-react";
+
+const page = () => {
+  return (
+    <div>
+      {/*favorite cities*/}
+      <div>
+        <h1>My Location</h1>
+        <Button>
+          <RefreshCw />
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+export default page;
