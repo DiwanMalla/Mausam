@@ -16,22 +16,20 @@ const Header = () => {
           <Image src={"/logo.png"} alt="Mausam logo" width={100} height={50} />
         </Link>{" "}
         {/*search*/}
-        <div className="flex gap-4">
-          <CitySearch />
-          {/*theme switcher*/}
-          <div
-            onClick={() => setTheme(isDark ? "light" : "dark")}
-            title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
-            className={`flex items-center cursor-pointer transition-transform duration-500 ease-in-out ${
-              isDark ? "rotate-180" : "rotate-0"
-            }`}
-          >
-            {isDark ? (
-              <Sun className="h-6 w-6 text-yellow-500" />
-            ) : (
-              <Moon className="h-6 w-6 text-blue-500 " />
-            )}
-          </div>
+        <CitySearch />
+        {/*theme switcher*/}
+        <div
+          onClick={() => setTheme(isDark ? "light" : "dark")}
+          title={isDark ? "Switch to Light Mode" : "Switch to Dark Mode"}
+          className={`flex items-center cursor-pointer transition-transform duration-500 ease-in-out ${
+            isDark ? "rotate-180" : "rotate-0"
+          }`}
+        >
+          {isDark ? (
+            <Sun className="h-6 w-6 text-yellow-500" />
+          ) : (
+            <Moon className="h-6 w-6 text-blue-500 " />
+          )}
         </div>
       </div>
     </header>

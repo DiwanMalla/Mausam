@@ -57,7 +57,7 @@ class WeatherAPI {
     const url = this.createURL(`${API_CONFIG.GEO}/direct`, {
       q: query,
 
-      limit: "5",
+      limit: 1,
     });
 
     return this.fetchData<GeocodingResponse[]>(url);

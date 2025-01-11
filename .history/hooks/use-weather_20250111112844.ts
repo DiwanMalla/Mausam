@@ -1,12 +1,13 @@
 import type { Coordinates } from "@/app/API/types";
 import { weatherAPI } from "@/app/API/weather";
 import { useQuery } from "@tanstack/react-query";
+import { SearchIcon } from "lucide-react";
 
 export const WEATHER_KEYS = {
   weather: (coords: Coordinates) => ["weather", coords] as const,
   forecast: (coords: Coordinates) => ["forecast", coords] as const,
   location: (coords: Coordinates) => ["location", coords] as const,
-  search: (query: string) => ["location-search", query] as const,
+  SearchIcon: (query: string) => ["location-search", query] as const,
 };
 export function useWeatherQuery(coordinates: Coordinates | null) {
   return useQuery({

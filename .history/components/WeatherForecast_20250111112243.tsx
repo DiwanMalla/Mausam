@@ -73,12 +73,12 @@ const WeatherForecast = ({ data }: WeatherForecastProps) => {
                 </div>
                 <div className="flex justify-end gap-4">
                   <span className="flex items-center gap-1">
-                    <Droplets className="h-4 w-4 text-blue-500" />
-                    <span className="text-sm">{day.humidity}%</span>
+                    <Droplets />
+                    <span>{day.humidity}%</span>
                   </span>
-                  <span className="flex items-center gap-1">
-                    <Wind className="h-4 w-4 text-blue-500" />
-                    <span className="text-sm">{day.wind}m/s</span>
+                  <span>
+                    <Wind />
+                    <span>{day.wind}m/s</span>
                   </span>
                 </div>
               </div>

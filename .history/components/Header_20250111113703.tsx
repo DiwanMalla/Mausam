@@ -16,7 +16,7 @@ const Header = () => {
           <Image src={"/logo.png"} alt="Mausam logo" width={100} height={50} />
         </Link>{" "}
         {/*search*/}
-        <div className="flex gap-4">
+        <div>
           <CitySearch />
           {/*theme switcher*/}
           <div
